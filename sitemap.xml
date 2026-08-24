@@ -209,4 +209,20 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/faq.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/faq.html"/>
   </url>
+  <url>
+    <loc>https://madridvbarca.com/quiz.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/quiz.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/quiz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/quiz.html"/>
+  </url>
+  <url>
+    <loc>https://madridvbarca.com/es/quiz.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/quiz.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/quiz.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/quiz.html"/>
+  </url>
 </urlset>
