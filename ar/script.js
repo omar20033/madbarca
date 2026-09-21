@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
       row.hidden = !visible;
       if (visible) shown++;
     });
-    if (countEl) countEl.textContent = shown + ' de ' + rows.length + ' enfrentamientos mostrados';
+    if (countEl) countEl.textContent = 'عرض ' + shown + ' من ' + rows.length + ' مواجهة';
   }
   if (search) search.addEventListener('input', applyFilter);
   if (compFilter) compFilter.addEventListener('change', applyFilter);

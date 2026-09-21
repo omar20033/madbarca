@@ -527,7 +527,7 @@ footer p{
   color:var(--muted-2);
   letter-spacing:0.02em;
 }
-footer nav{ display:flex; gap:18px; }
+footer nav{ display:flex; gap:8px 18px; flex-wrap:wrap; }
 footer nav a{
   font-family:var(--mono);
   font-size:11px;
@@ -646,7 +646,7 @@ section.on-paper .faq-item p{ color:#5B564B; }
   font-size:11px;
   letter-spacing:0.04em;
   color:var(--muted-2);
-  padding:16px 0 0;
+  padding:16px 28px 0;
 }
 .breadcrumb a{ color:var(--muted); }
 .breadcrumb a:hover{ color:var(--text); }
