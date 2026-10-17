@@ -8,6 +8,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/index.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/index.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/"/>
   </url>
   <url>
@@ -26,6 +27,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/clasico.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/clasico.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/clasico.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/clasico.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/clasico.html"/>
   </url>
   <url>
@@ -53,6 +55,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/managers.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/managers.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/managers.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/managers.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/managers.html"/>
   </url>
   <url>
@@ -89,6 +92,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/finances.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/finances.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/finances.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/finances.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/finances.html"/>
   </url>
   <url>
@@ -107,6 +111,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/history.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/history.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/history.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/history.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/history.html"/>
   </url>
   <url>
@@ -387,6 +392,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/watch.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/watch.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/watch.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/watch.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/watch.html"/>
   </url>
   <url>
@@ -397,6 +403,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/watch.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/watch.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/watch.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/watch.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/watch.html"/>
   </url>
   <url>
@@ -407,6 +414,68 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/watch.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/watch.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/watch.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/watch.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/watch.html"/>
+  </url>
+  <url>
+    <loc>https://madridvbarca.com/fr/watch.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/watch.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/watch.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/watch.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/watch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/watch.html"/>
+  </url>
+  <url>
+    <loc>https://madridvbarca.com/fr/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/"/>
+  </url>
+  <url>
+    <loc>https://madridvbarca.com/fr/clasico.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/clasico.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/clasico.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/clasico.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/clasico.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/clasico.html"/>
+  </url>
+  <url>
+    <loc>https://madridvbarca.com/fr/managers.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/managers.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/managers.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/managers.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/managers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/managers.html"/>
+  </url>
+  <url>
+    <loc>https://madridvbarca.com/fr/finances.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/finances.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/finances.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/finances.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/finances.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/finances.html"/>
+  </url>
+  <url>
+    <loc>https://madridvbarca.com/fr/history.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madridvbarca.com/history.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://madridvbarca.com/es/history.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madridvbarca.com/ar/history.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/history.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/history.html"/>
   </url>
 </urlset>
