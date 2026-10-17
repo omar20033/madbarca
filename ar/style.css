@@ -981,3 +981,18 @@ html[dir="rtl"] .quiz-result .score{ direction:ltr; }
 @media (max-width:1180px){
   html[dir="rtl"] nav.primary a{ font-size:15px; }
 }
+
+
+/* -------------------- where-to-watch page -------------------- */
+.watch-big{ font-size:30px !important; line-height:1.1 !important; }
+.local-time{ margin:6px 0 18px; color:var(--muted); font-size:15px; }
+.local-time strong{ color:var(--madrid); font-weight:600; }
+.kick-table{ width:100%; border-collapse:collapse; margin-top:8px; }
+.kick-table th, .kick-table td{ padding:12px 10px; border-top:1px solid var(--line); text-align:start; font-size:15px; font-weight:400; }
+.kick-table thead th{ font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted-2); border-top:none; }
+.kick-table td.t{ font-family:var(--mono); color:var(--madrid); white-space:nowrap; }
+.kick-table tbody tr:last-child th, .kick-table tbody tr:last-child td{ border-bottom:1px solid var(--line); }
+section.on-paper .card h3{ font-family:var(--display); font-size:28px; line-height:1.1; color:var(--ink); margin-bottom:8px; }
+.w-card ul{ margin-top:12px; padding-inline-start:18px; font-size:14px; color:#3d3a33; }
+.w-card li{ margin-top:6px; }
+html[dir="rtl"] .kick-table td.t{ direction:ltr; unicode-bidi:plaintext; }
