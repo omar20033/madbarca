@@ -996,27 +996,3 @@ section.on-paper .card h3{ font-family:var(--display); font-size:28px; line-heig
 .w-card ul{ margin-top:12px; padding-inline-start:18px; font-size:14px; color:#3d3a33; }
 .w-card li{ margin-top:6px; }
 html[dir="rtl"] .kick-table td.t{ direction:ltr; unicode-bidi:plaintext; }
-
-/* ---------- Live odds (Polymarket) ---------- */
-.live-odds-section{ padding-top:40px; padding-bottom:40px; border-top:1px solid var(--line); }
-#live-odds{ max-width:860px; margin:0 auto; }
-.odds-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); }
-.odds-cell{ background:var(--bg-raised); padding:18px 16px 14px; text-align:center; }
-.odds-label{ font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
-.odds-pct{ font-family:var(--display); font-size:52px; line-height:1.05; margin-top:6px; }
-.odds-dec{ font-family:var(--mono); font-size:12px; color:var(--muted-2); margin-top:2px; }
-.odds-bar{ height:3px; background:var(--line); margin-top:12px; }
-.odds-bar span{ display:block; height:100%; transition:width .6s ease; }
-.odds-cell.madrid .odds-pct{ color:var(--madrid); }
-.odds-cell.madrid .odds-bar span{ background:var(--madrid); }
-.odds-cell.barca .odds-pct{ color:var(--barca-blue-lt); }
-.odds-cell.barca .odds-bar span{ background:linear-gradient(90deg,var(--barca-blue-lt),var(--barca-red-lt)); }
-.odds-cell.draw .odds-pct{ color:var(--text); }
-.odds-cell.draw .odds-bar span{ background:var(--muted); }
-.odds-foot{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px 16px; margin-top:12px; font-family:var(--mono); font-size:11px; color:var(--muted); }
-.odds-foot a{ color:var(--text); text-decoration:underline; }
-.odds-live{ display:inline-flex; align-items:center; gap:6px; }
-.odds-live i{ width:7px; height:7px; border-radius:50%; background:#3ecf6e; animation:oddsPulse 1.6s infinite; }
-@keyframes oddsPulse{ 0%,100%{ opacity:1 } 50%{ opacity:.25 } }
-.odds-note{ margin-top:8px; font-size:12px; color:var(--muted-2); text-align:center; }
-@media (max-width:520px){ .odds-pct{ font-size:40px; } .odds-cell{ padding:14px 8px 12px; } .odds-foot{ justify-content:center; text-align:center; } }
