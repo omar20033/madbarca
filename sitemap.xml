@@ -522,4 +522,24 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://madridvbarca.com/fr/odds.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://madridvbarca.com/odds.html"/>
   </url>
+  <url>
+    <loc>https://madridvbarca.com/about.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://madridvbarca.com/contact.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://madridvbarca.com/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://madridvbarca.com/terms.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
