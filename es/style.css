@@ -889,3 +889,73 @@ section.on-paper .card h3{ font-family:var(--display); font-size:28px; line-heig
 .w-card ul{ margin-top:12px; padding-inline-start:18px; font-size:14px; color:#3d3a33; }
 .w-card li{ margin-top:6px; }
 html[dir="rtl"] .kick-table td.t{ direction:ltr; unicode-bidi:plaintext; }
+
+/* ---------- Live odds (Polymarket) ---------- */
+.live-odds-section{ padding-top:40px; padding-bottom:40px; border-top:1px solid var(--line); }
+#live-odds{ max-width:860px; margin:0 auto; }
+.odds-grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); }
+.odds-cell{ background:var(--bg-raised); padding:18px 16px 14px; text-align:center; }
+.odds-label{ font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+.odds-pct{ font-family:var(--display); font-size:52px; line-height:1.05; margin-top:6px; }
+.odds-dec{ font-family:var(--mono); font-size:12px; color:var(--muted-2); margin-top:2px; }
+.odds-bar{ height:3px; background:var(--line); margin-top:12px; }
+.odds-bar span{ display:block; height:100%; transition:width .6s ease; }
+.odds-cell.madrid .odds-pct{ color:var(--madrid); }
+.odds-cell.madrid .odds-bar span{ background:var(--madrid); }
+.odds-cell.barca .odds-pct{ color:var(--barca-blue-lt); }
+.odds-cell.barca .odds-bar span{ background:linear-gradient(90deg,var(--barca-blue-lt),var(--barca-red-lt)); }
+.odds-cell.draw .odds-pct{ color:var(--text); }
+.odds-cell.draw .odds-bar span{ background:var(--muted); }
+.odds-foot{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px 16px; margin-top:12px; font-family:var(--mono); font-size:11px; color:var(--muted); }
+.odds-foot a{ color:var(--text); text-decoration:underline; }
+.odds-live{ display:inline-flex; align-items:center; gap:6px; }
+.odds-live i{ width:7px; height:7px; border-radius:50%; background:#3ecf6e; animation:oddsPulse 1.6s infinite; }
+@keyframes oddsPulse{ 0%,100%{ opacity:1 } 50%{ opacity:.25 } }
+.odds-note{ margin-top:8px; font-size:12px; color:var(--muted-2); text-align:center; }
+@media (max-width:520px){ .odds-pct{ font-size:40px; } .odds-cell{ padding:14px 8px 12px; } .odds-foot{ justify-content:center; text-align:center; } }
+
+/* ---------- Odds page ---------- */
+.odds-block{ max-width:860px; margin:0 auto 36px; }
+.odds-block h3{ font-family:var(--display); font-size:26px; margin:0 0 4px; }
+.odds-block .odds-sub{ color:var(--muted); font-size:14px; margin:0 0 14px; }
+.odds-grid.two{ grid-template-columns:1fr 1fr; }
+.odds-grid.four{ grid-template-columns:repeat(4,1fr); }
+.odds-grid.four .odds-pct{ font-size:38px; }
+.odds-volnote{ margin-top:8px; font-family:var(--mono); font-size:11px; color:var(--muted-2); }
+.odds-table{ border:1px solid var(--line); background:var(--bg-raised); }
+.odds-row{ display:grid; grid-template-columns:110px 1fr; gap:12px; align-items:center; padding:12px 14px; border-top:1px solid var(--line); }
+.odds-row:first-child{ border-top:0; }
+.odds-line{ font-family:var(--mono); font-size:12px; color:var(--muted); letter-spacing:.04em; }
+.odds-duo{ display:grid; grid-template-columns:auto 1fr auto; gap:12px; align-items:center; font-size:14px; }
+.odds-duo .bar{ height:6px; background:var(--line); position:relative; display:block; }
+.odds-duo .bar i{ position:absolute; inset:0 auto 0 0; background:var(--barca-blue-lt); display:block; transition:width .6s ease; }
+.odds-duo .u{ text-align:end; }
+#o-status{ text-align:center; color:var(--muted); padding:20px 0; }
+.odds-cta{ text-align:center; margin:8px 0 0; }
+@media (max-width:520px){
+  .odds-grid.four{ grid-template-columns:1fr 1fr; }
+  .odds-row{ grid-template-columns:1fr; gap:6px; }
+}
+
+/* ---------- Odds page: form guide & head-to-head ---------- */
+.analysis .form-cap{ max-width:860px; margin:0 auto 10px; font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+.form-grid{ display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); max-width:860px; margin:0 auto 36px; }
+.form-card{ background:var(--bg-raised); padding:20px; }
+.form-card h3{ font-family:var(--display); font-size:26px; margin:0 0 12px; }
+.form-card.barca h3{ color:var(--barca-blue-lt); }
+.form-card.madrid h3{ color:var(--madrid); }
+.form-chips{ display:flex; flex-wrap:wrap; gap:6px; list-style:none; margin:0 0 14px; padding:0; }
+.chip{ display:flex; align-items:center; gap:6px; border:1px solid var(--line); padding:3px 8px 3px 3px; font-family:var(--mono); font-size:11px; }
+.chip b{ width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-size:10px; }
+.chip.w b{ background:#2f9e5b; } .chip.l b{ background:#c0392b; } .chip.d b{ background:#7a7f8a; }
+.form-card .facts{ margin:0; padding-inline-start:18px; font-size:14px; line-height:1.6; color:var(--muted); }
+.form-card .facts li{ margin-bottom:8px; }
+.analysis-copy{ max-width:860px; margin:0 auto; }
+.analysis-copy h3{ font-family:var(--display); font-size:26px; margin:0 0 4px; }
+.h2h{ overflow-x:auto; margin:0 0 8px; }
+.h2h table{ width:100%; border-collapse:collapse; font-size:14px; min-width:460px; }
+.h2h th, .h2h td{ padding:10px 12px; border-bottom:1px solid var(--line); text-align:start; }
+.h2h th{ font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); font-weight:400; }
+.h2h tr.b td:last-child{ color:var(--barca-blue-lt); }
+.h2h tr.m td:last-child{ color:var(--madrid); }
+@media (max-width:620px){ .form-grid{ grid-template-columns:1fr; } }
