@@ -27,9 +27,9 @@ var QUIZ_QUESTIONS = [
   },
   {
     q: "Según el cómputo histórico total, ¿cómo está el balance de victorias en El Clásico?",
-    opts: ["El Barcelona lidera por 10 victorias", "El Real Madrid lidera por 6 victorias", "Está igualado a 106 victorias cada uno", "El Real Madrid lidera por 20 victorias"],
+    opts: ["El Barcelona lidera por 10 victorias", "El Real Madrid lidera por 6 victorias", "El Real Madrid lidera por solo 1 victoria", "El Real Madrid lidera por 20 victorias"],
     correct: 2,
-    explain: "En 264 enfrentamientos oficiales desde 1902, ambos equipos han ganado 106 partidos cada uno, con 52 empates — un empate total."
+    explain: "En 265 enfrentamientos oficiales desde 1902, el Real Madrid ha ganado 107 y el Barcelona 106, con 52 empates — solo una victoria los separa."
   },
   {
     q: "¿Cuál es el mayor margen de victoria en la historia del Clásico?",

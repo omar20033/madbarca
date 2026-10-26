@@ -7,11 +7,13 @@
 (function () {
   var box = document.getElementById('live-score');
   var sec = document.getElementById('live-score-section');
+  var last_result = document.getElementById('last-result');
+  function showLive(on) { sec.hidden = !on; if (last_result) last_result.hidden = on; }
   if (!box || !sec) return;
 
   var CFG = window.ODDS_CONFIG || {};
   var cd = document.querySelector('.countdown');
-  var KICKOFF = new Date((cd && cd.getAttribute('data-target')) || '2026-10-25T21:00:00+01:00').getTime();
+  var KICKOFF = new Date((cd && cd.getAttribute('data-target')) || '2027-05-09T21:00:00+02:00').getTime();
   var BEFORE = 45 * 60e3, AFTER = 3 * 3600e3;
   var REFRESH_LIVE = 20000, REFRESH_IDLE = 60000;
 
@@ -23,10 +25,10 @@
 
   var lang = (document.documentElement.lang || 'en').slice(0, 2);
   var TR = {
-    en: { barca: 'Barcelona', madrid: 'Real Madrid', live: 'Live', ht: 'Half-time', ft: 'Full-time', pre: 'Kick-off', comp: 'LaLiga · Spotify Camp Nou', upd: 'Updated', watch: 'Where to watch →', na: 'Live score is unavailable right now.', src: 'Data: ESPN · Polymarket' },
-    es: { barca: 'Barcelona', madrid: 'Real Madrid', live: 'En vivo', ht: 'Descanso', ft: 'Final', pre: 'Inicio', comp: 'LaLiga · Spotify Camp Nou', upd: 'Actualizado', watch: 'Dónde verlo →', na: 'El marcador en vivo no está disponible ahora.', src: 'Datos: ESPN · Polymarket' },
-    fr: { barca: 'Barcelone', madrid: 'Real Madrid', live: 'En direct', ht: 'Mi-temps', ft: 'Terminé', pre: 'Coup d’envoi', comp: 'LaLiga · Spotify Camp Nou', upd: 'Mis à jour', watch: 'Où regarder →', na: 'Le score en direct est indisponible pour le moment.', src: 'Données : ESPN · Polymarket' },
-    ar: { barca: 'برشلونة', madrid: 'ريال مدريد', live: 'مباشر', ht: 'استراحة', ft: 'انتهت', pre: 'الانطلاق', comp: 'الدوري الإسباني · سبوتيفاي كامب نو', upd: 'آخر تحديث', watch: 'أين تشاهد ←', na: 'النتيجة المباشرة غير متاحة حالياً.', src: 'البيانات: ESPN · Polymarket' }
+    en: { barca: 'Barcelona', madrid: 'Real Madrid', live: 'Live', ht: 'Half-time', ft: 'Full-time', pre: 'Kick-off', comp: 'LaLiga · Santiago Bernabéu', upd: 'Updated', watch: 'Where to watch →', na: 'Live score is unavailable right now.', src: 'Data: ESPN · Polymarket' },
+    es: { barca: 'Barcelona', madrid: 'Real Madrid', live: 'En vivo', ht: 'Descanso', ft: 'Final', pre: 'Inicio', comp: 'LaLiga · Santiago Bernabéu', upd: 'Actualizado', watch: 'Dónde verlo →', na: 'El marcador en vivo no está disponible ahora.', src: 'Datos: ESPN · Polymarket' },
+    fr: { barca: 'Barcelone', madrid: 'Real Madrid', live: 'En direct', ht: 'Mi-temps', ft: 'Terminé', pre: 'Coup d’envoi', comp: 'Liga · Santiago Bernabéu', upd: 'Mis à jour', watch: 'Où regarder →', na: 'Le score en direct est indisponible pour le moment.', src: 'Données : ESPN · Polymarket' },
+    ar: { barca: 'برشلونة', madrid: 'ريال مدريد', live: 'مباشر', ht: 'استراحة', ft: 'انتهت', pre: 'الانطلاق', comp: 'الدوري الإسباني · سانتياغو برنابيو', upd: 'آخر تحديث', watch: 'أين تشاهد ←', na: 'النتيجة المباشرة غير متاحة حالياً.', src: 'البيانات: ESPN · Polymarket' }
   };
   var T = TR[lang] || TR.en;
 
@@ -71,7 +73,7 @@
   }
 
   // ---- source 2: Polymarket ------------------------------------------------
-  // Event slug is lal-bar-rea-…, i.e. Barcelona (home) first, so "a-b" means Barça a, Madrid b.
+  // Event slug lal-bar-rea-… means Barcelona is home ("a-b" = Barça a, Madrid b); lal-rea-bar-… means Madrid is home.
   function fromPoly(ev) {
     if (!ev) return null;
     var m = /(\d+)\s*[-–:]\s*(\d+)/.exec(String(ev.score || ''));
@@ -83,7 +85,8 @@
     else if (ev.live === true) state = 'in';
     else state = Date.now() >= KICKOFF ? 'in' : 'pre';
     var el = parseInt(ev.elapsed, 10);
-    return { barca: +m[1], madrid: +m[2], state: state, clock: (state === 'in' && !isNaN(el)) ? el + '’' : '', hasScore: state !== 'pre' };
+    var madridHome = /lal-rea-bar/.test((CFG.slug || '').toLowerCase());
+    return { barca: madridHome ? +m[2] : +m[1], madrid: madridHome ? +m[1] : +m[2], state: state, clock: (state === 'in' && !isNaN(el)) ? el + '’' : '', hasScore: state !== 'pre' };
   }
 
   function load() {
@@ -128,13 +131,13 @@
   function inWindow() { var n = Date.now(); return n >= KICKOFF - BEFORE && n <= KICKOFF + AFTER; }
 
   function tick() {
-    if (!inWindow()) { sec.hidden = true; return setTimeout(tick, REFRESH_IDLE); }
+    if (!inWindow()) { showLive(false); return setTimeout(tick, REFRESH_IDLE); }
     if (document.hidden && last) return setTimeout(tick, REFRESH_LIVE);
     load().then(function (s) {
-      sec.hidden = false;
+      showLive(true);
       if (s) render(s); else if (!last) renderNA();
     }).catch(function () {
-      sec.hidden = false;
+      showLive(true);
       if (!last) renderNA();
     }).then(function () {
       setTimeout(tick, last && last.state === 'pre' ? REFRESH_IDLE : REFRESH_LIVE);

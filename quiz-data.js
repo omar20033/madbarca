@@ -27,9 +27,9 @@ var QUIZ_QUESTIONS = [
   },
   {
     q: "As of the most recent all-time tally, what is the head-to-head Clásico win count?",
-    opts: ["Barcelona lead by 10 wins", "Real Madrid lead by 6 wins", "It's level at 106 wins apiece", "Real Madrid lead by 20 wins"],
+    opts: ["Barcelona lead by 10 wins", "Real Madrid lead by 6 wins", "Real Madrid lead by just 1 win", "Real Madrid lead by 20 wins"],
     correct: 2,
-    explain: "Across 264 competitive meetings since 1902, both sides have won 106 each, with 52 draws — a dead heat."
+    explain: "Across 265 competitive meetings since 1902, Real Madrid have won 107 and Barcelona 106, with 52 draws — just one win apart."
   },
   {
     q: "What is the largest margin of victory in Clásico history?",

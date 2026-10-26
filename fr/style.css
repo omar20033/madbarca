@@ -989,3 +989,5 @@ html[dir="rtl"] .kick-table td.t{ direction:ltr; unicode-bidi:plaintext; }
   .ls-score{ gap:6px; }
   .ls-foot{ justify-content:center; text-align:center; }
 }
+
+.ls-label{ font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); text-align:center; margin:0 0 10px; }
